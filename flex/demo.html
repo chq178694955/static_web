@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex Layout</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.wrap{
+			display: flex;
+			display: -webkit-flex;
+			width: 100%;
+			flex-flow: row wrap;
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+		}
+		.box2{
+			flex:1;
+			height: 80px;
+			background: blue;
+		}
+		.box3{
+			flex:2;
+			height:150px;
+			background: green;
+		}
+
+		.wrap2{
+			display: flex;
+			display: -webkit-flex;
+			width: 100%;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-top:20px;
+			justify-content: space-around;/* flex-start,flex-end,center,space-between,space-around */ /* 子元素在水平方向的对齐方式，main-axis */
+			align-items: center;/* flex-start | flex-end | center | baseline | stretch */ /* 子元素在垂直方向的对齐方式,cross-axis */
+		}
+		.box2-1{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+		}
+		.box2-2{
+			width: 200px;
+			height: 200px;
+			background: blue;
+		}
+		.box2-3{
+			width: 300px;
+			height: 300px;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+	</div>
+
+	<div class="wrap2">
+		<div class="box2-1">4</div>
+		<div class="box2-2">5</div>
+		<div class="box2-3">6</div>
+	</div>
+</body>
+</html>
