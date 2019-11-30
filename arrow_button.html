@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			margin: 50px auto;
+			width:360px;
+			height: 72px;
+			background: red;
+			position: relative;
+
+		}
+		.left{
+			position: absolute;
+			width: 72px;
+			height: 72px;
+			line-height: 72px;
+			text-align: center;
+			top:0;
+			left:0;
+			background: yellow;
+		}
+		.center{
+			position: absolute;
+			top:0;
+			left:72px;
+			right:72px;
+			height: 72px;
+			line-height: 72px;
+			background: blue;
+			overflow:hidden;
+		}
+		.right{
+			position: absolute;
+			top:0;
+			right:0;
+			width: 72px;
+			height: 72px;
+			line-height: 72px;
+			background: green;
+		}
+		.arrow{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border: 2px solid red;
+			border-left:none;
+			border-bottom:none;
+			transform: rotate(45deg);
+			box-sizing: border-box;
+			left:50%;
+			top:50%;
+			margin-left:-10px;
+			margin-top:-10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="left">图片</div>
+		<div class="center">标题</div>
+		<div class="right">
+			<div class="arrow"></div>
+		</div>
+	</div>
+</body>
+</html>
